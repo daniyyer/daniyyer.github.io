@@ -1,0 +1,718 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="css,background,border," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="css-secretsBackgrounds &amp;amp; BordersTranslucent半透明的边框，背景background-clip的属性默认值是border-box，要实现半透明边框效果，需要把这个属性改成padding-box；background-clip: padding-box;。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="css-secrets-backgrounds">
+<meta property="og:url" content="http://daniyyer.github.io/2016/04/30/css-secrets-backgrounds/index.html">
+<meta property="og:site_name" content="daniyyer‘blog">
+<meta property="og:description" content="css-secretsBackgrounds &amp;amp; BordersTranslucent半透明的边框，背景background-clip的属性默认值是border-box，要实现半透明边框效果，需要把这个属性改成padding-box；background-clip: padding-box;。">
+<meta property="og:image" content="http://daniyyer.github.io/2016/04/30/css-secrets-backgrounds/diagonal-stripes.png">
+<meta property="og:updated_time" content="2016-05-03T08:56:25.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="css-secrets-backgrounds">
+<meta name="twitter:description" content="css-secretsBackgrounds &amp;amp; BordersTranslucent半透明的边框，背景background-clip的属性默认值是border-box，要实现半透明边框效果，需要把这个属性改成padding-box；background-clip: padding-box;。">
+<meta name="twitter:image" content="http://daniyyer.github.io/2016/04/30/css-secrets-backgrounds/diagonal-stripes.png">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> css-secrets-backgrounds | daniyyer‘blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-63170755-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">daniyyer‘blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="st-search-show-outputs">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', 'WZbyFmamvQ5vAVU3ggzQ','2.0.0');
+</script>
+
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                css-secrets-backgrounds
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-04-30T20:29:00+08:00" content="2016-04-30">
+              2016-04-30
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/04/30/css-secrets-backgrounds/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/30/css-secrets-backgrounds/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="css-secrets"><a href="#css-secrets" class="headerlink" title="css-secrets"></a>css-secrets</h1><h2 id="Backgrounds-amp-Borders"><a href="#Backgrounds-amp-Borders" class="headerlink" title="Backgrounds &amp; Borders"></a>Backgrounds &amp; Borders</h2><h3 id="Translucent"><a href="#Translucent" class="headerlink" title="Translucent"></a>Translucent</h3><p>半透明的边框，背景background-clip的属性默认值是border-box，要实现半透明边框效果，需要把这个属性改成padding-box；<code>background-clip: padding-box;</code>。</p>
+<a id="more"></a>
+<h3 id="multiple-borders"><a href="#multiple-borders" class="headerlink" title="multiple borders"></a>multiple borders</h3><ol>
+<li>多边框效果，可以用边框阴影来模拟 ‘box-shadow: 0 0 0 10px #655, 0 0 0 15px deeppink;’ ，边框阴影是一个叠一个的，所以要调整spread radius 。这个方案大多数时候很好用，但也有一些缺点：<ul>
+<li>阴影毕竟不是边框，它们不占空间，所以需要用额外的padding or margin 去调整（取决于shadow是inset or not）</li>
+<li>这些假边框也不能捕捉鼠标事件，所以也需要用上面的方式去调整。</li>
+</ul>
+</li>
+<li>用outline 模拟，之前用阴影模拟只能产生实线的效果，如果需要dashed 等border style 就可以用outline来模拟，outline-offset 这个属性是控制outline 和border间距的，可以为负值，实现一些有意思的效果。当然单用outline ，同样也有局限:<ul>
+<li>多边框效果，outline 只能有一个，所以只用outline 和 border 只能实现2个边框。</li>
+<li>不被border-radius 影响，这个被css wg 认为是个bug，未来可能被修复。</li>
+<li>“Outlines may be non-rectangular” ,这个比较抽象，看了规范(w3.org/TR/css3-ui), 也不是很了解具体的形式。</li>
+</ul>
+</li>
+</ol>
+<p>自己的一些实验体会：可以结合这两种方法用；outline的z-index比较大啊，还有同样不能捕捉鼠标事件。</p>
+<h3 id="Flexible-background-positioning"><a href="#Flexible-background-positioning" class="headerlink" title="Flexible background positioning"></a>Flexible background positioning</h3><ol>
+<li><p>扩展的背景位置，在<a href="w3.org/TR/css3-background">CSS Backgrounds &amp; Borders Level 3</a> 中表明，可以在offset前加位置关键词来定位</p>
+<pre><code>background: url(code-pirate.svg) no-repeat #58a;
+background-position: right 20px bottom 10px;
+</code></pre><p> 这个属性在查了下，ie8 不支持，可以为它提供一个fallback：</p>
+<pre><code>background: url(code-pirate.svg) no-repeat bottom right #58a;
+background-position: right 20px bottom 10px;
+</code></pre></li>
+<li><p>background-origin 这个属性默认是padding-box，可以改为content-box来改变背景图的位置。</p>
+</li>
+<li><p>用calc()， 可以混合百分比和px，运算符前后要加空格：</p>
+<pre><code>background: url(&quot;code-pirate.svg&quot;) no-repeat; 
+background-position: calc(100% - 20px) calc(100% - 10px);
+</code></pre></li>
+</ol>
+<h3 id="Striped-backgrounds"><a href="#Striped-backgrounds" class="headerlink" title="Striped backgrounds"></a>Striped backgrounds</h3><p>条纹背景，用线性渐变来模拟条纹效果：</p>
+<ol>
+<li><p>横条纹 </p>
+<pre><code>background: linear-gradient(#fb3 30%, #58a 0); 
+background-size: 100% 30px;
+</code></pre></li>
+<li><p>竖条纹</p>
+<pre><code>background: linear-gradient(to right, /* or 90deg */ #fb3 50%, #58a 0);
+background-size: 30px 100%;
+</code></pre></li>
+<li><p>斜条纹，有所不同，需要创建一个这样的重复区域 <img src="/2016/04/30/css-secrets-backgrounds/diagonal-stripes.png" alt="diagonal-stripes.png" title=""></p>
+<pre><code>background: linear-gradient(45deg,#fb3 25%, #58a 0, #58a 50%,#fb3 0, #fb3 75%, #58a 0); 
+background-size: 42px 42px;
+</code></pre><p> 这个方法不是很灵活，所以需要用别的属性实现 <code>repeating-linear-gradient()</code> 和 <code>repeating-radial-gradient()</code><br> 斜条纹中的第一种写法可以优化为：</p>
+<pre><code>background: repeating-linear-gradient(45deg,#fb3, #fb3 15px, #58a 0, #58a 30px);
+</code></pre></li>
+</ol>
+<h3 id="Complex-background-patterns"><a href="#Complex-background-patterns" class="headerlink" title="Complex background patterns"></a>Complex background patterns</h3><p>复杂的背景样式，作者创建了很多<a href="http://lea.verou.me/css3patterns/#" target="_blank" rel="external">css3 patterns</a>,还有用<a href="https://philiprogers.com/svgpatterns/#simplehorizontal" target="_blank" rel="external">svg</a> 创建的,这些样式有些只是为了展示，可能并不实用，作者也推荐大家用一些预处理语言来写这些样式，如下面说到的 polka dot 样式，就创建了一个sass的mixin。</p>
+<p>书中介绍了几种常用的背景样式：</p>
+<ol>
+<li><p>Grids<br>格子背景</p>
+</li>
+<li><p>Polka dot<br>波尔卡圆点</p>
+</li>
+<li><p>Checkerboards<br>棋盘背景，这个比较复杂，需要组合两组三角背景拼接而成，也可以使用svg绘制，这个比较简单。</p>
+</li>
+</ol>
+<h3 id="Pseudo-random-backgrounds"><a href="#Pseudo-random-backgrounds" class="headerlink" title="(Pseudo)random backgrounds"></a>(Pseudo)random backgrounds</h3><p>随机的背景，通过叠加多个背景图片，借助素数，来创建。有人总结为蝉的法则 the cicada principle <a href="http://www.sitepoint.com/the-cicada-principle-and-why-it-matters-to-web-designers/" target="_blank" rel="external">^1</a></p>
+<pre><code>background: hsl(20, 40%, 90%);
+background-image:
+    linear-gradient(90deg, #fb3 11px, transparent 0),
+    linear-gradient(90deg, #ab4 23px, transparent 0),
+    linear-gradient(90deg, #655 41px, transparent 0);
+background-size: 41px 100%, 61px 100%, 83px 100%;
+</code></pre><h3 id="Continuous-image-borders"><a href="#Continuous-image-borders" class="headerlink" title="Continuous image borders"></a>Continuous image borders</h3><p>作者讲了border-image 属性的局限性，提供了一种用渐变背景模拟图片边框的方式，这里摘录几个例子：</p>
+<ol>
+<li><p>复古信封边框，<a href="http://dabblet.com/gist/e3cfcb094e65d85df847" target="_blank" rel="external">效果参考</a></p>
+<pre><code>div {
+    padding: 1em;
+    border: 1em solid transparent;
+    background: linear-gradient(white, white) padding-box,
+        repeating-linear-gradient(-45deg, red 0, red 12.5%, transparent 0, transparent 25%, 
+          #58a 0, #58a 37.5%, transparent 0, transparent 50%) 0 / 6em 6em;
+
+    max-width: 20em;
+    font: 100%/1.6 Baskerville, Palatino, serif;
+}
+</code></pre></li>
+<li><p>行进的蚂蚁线，<a href="http://dabblet.com/gist/f26dddc71730c3847153" target="_blank" rel="external">效果参考</a></p>
+<pre><code>div {
+    padding: 1em;
+    border: 1px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+        repeating-linear-gradient(-45deg, black 0, black 25%, transparent 0, transparent 50%) 0 / .6em .6em;
+    animation: ants 12s linear infinite;
+
+    max-width: 20em;
+    font: 100%/1.6 Baskerville, Palatino, serif;
+}
+</code></pre></li>
+</ol>
+
+      
+    </div>
+    
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/css/" rel="tag">#css</a>
+          
+            <a href="/tags/background/" rel="tag">#background</a>
+          
+            <a href="/tags/border/" rel="tag">#border</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/05/03/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/04/30/css-secrets-backgrounds/"
+           data-title="css-secrets-backgrounds" data-url="http://daniyyer.github.io/2016/04/30/css-secrets-backgrounds/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avatar.jpg"
+               alt="daniyyer" />
+          <p class="site-author-name" itemprop="name">daniyyer</p>
+          <p class="site-description motion-element" itemprop="description">技术博客</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#css-secrets"><span class="nav-number">1.</span> <span class="nav-text">css-secrets</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Backgrounds-amp-Borders"><span class="nav-number">1.1.</span> <span class="nav-text">Backgrounds & Borders</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Translucent"><span class="nav-number">1.1.1.</span> <span class="nav-text">Translucent</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#multiple-borders"><span class="nav-number">1.1.2.</span> <span class="nav-text">multiple borders</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Flexible-background-positioning"><span class="nav-number">1.1.3.</span> <span class="nav-text">Flexible background positioning</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Striped-backgrounds"><span class="nav-number">1.1.4.</span> <span class="nav-text">Striped backgrounds</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Complex-background-patterns"><span class="nav-number">1.1.5.</span> <span class="nav-text">Complex background patterns</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Pseudo-random-backgrounds"><span class="nav-number">1.1.6.</span> <span class="nav-text">(Pseudo)random backgrounds</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Continuous-image-borders"><span class="nav-number">1.1.7.</span> <span class="nav-text">Continuous image borders</span></a></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">daniyyer</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"daniyyer"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+  
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+
+</body>
+</html>
